@@ -1,0 +1,2162 @@
+[
+  {
+    "dataset_name": "Dataset Sintesis 21",
+    "filename": "data-sintesis-21.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 3,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "age",
+      "duration"
+    ],
+    "ordinal_attributes": [
+      "risk_level",
+      "experience",
+      "satisfaction"
+    ],
+    "ordinal_orders": {
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "experience": [
+        "Novice",
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ],
+      "satisfaction": [
+        "Very Dissatisfied",
+        "Dissatisfied",
+        "Neutral",
+        "Satisfied",
+        "Very Satisfied"
+      ]
+    },
+    "nominal_attributes": [
+      "brand"
+    ],
+    "label_column": "class",
+    "cluster_condition": "separated",
+    "minority_ratio": 0.19001728925579647
+  },
+  {
+    "dataset_name": "Dataset Sintesis 22",
+    "filename": "data-sintesis-22.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 2,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "latency",
+      "height"
+    ],
+    "ordinal_attributes": [
+      "satisfaction",
+      "risk_level"
+    ],
+    "ordinal_orders": {
+      "satisfaction": [
+        "Very Dissatisfied",
+        "Dissatisfied",
+        "Neutral",
+        "Satisfied",
+        "Very Satisfied"
+      ],
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ]
+    },
+    "nominal_attributes": [
+      "gender",
+      "language"
+    ],
+    "label_column": "class",
+    "cluster_condition": "overlapping",
+    "minority_ratio": 0.1595324406280528
+  },
+  {
+    "dataset_name": "Dataset Sintesis 23",
+    "filename": "data-sintesis-23.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 2,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "pressure",
+      "age",
+      "temperature",
+      "weight"
+    ],
+    "ordinal_attributes": [
+      "risk_level",
+      "skill_level"
+    ],
+    "ordinal_orders": {
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ]
+    },
+    "nominal_attributes": [
+      "payment_method",
+      "status"
+    ],
+    "label_column": "class",
+    "cluster_condition": "interleaved",
+    "minority_ratio": 0.35144390005196774
+  },
+  {
+    "dataset_name": "Dataset Sintesis 24",
+    "filename": "data-sintesis-24.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 2,
+      "nominal": 6
+    },
+    "numeric_attributes": [
+      "age",
+      "score"
+    ],
+    "ordinal_attributes": [
+      "satisfaction",
+      "condition"
+    ],
+    "ordinal_orders": {
+      "satisfaction": [
+        "Very Dissatisfied",
+        "Dissatisfied",
+        "Neutral",
+        "Satisfied",
+        "Very Satisfied"
+      ],
+      "condition": [
+        "Poor",
+        "Fair",
+        "Good",
+        "Excellent"
+      ]
+    },
+    "nominal_attributes": [
+      "status",
+      "device_type",
+      "region",
+      "department",
+      "language",
+      "color"
+    ],
+    "label_column": "class",
+    "cluster_condition": "separated",
+    "minority_ratio": 0.3404501118158191
+  },
+  {
+    "dataset_name": "Dataset Sintesis 25",
+    "filename": "data-sintesis-25.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 2,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "income",
+      "weight"
+    ],
+    "ordinal_attributes": [
+      "condition",
+      "size"
+    ],
+    "ordinal_orders": {
+      "condition": [
+        "Poor",
+        "Fair",
+        "Good",
+        "Excellent"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "nominal_attributes": [
+      "device_type"
+    ],
+    "label_column": "class",
+    "cluster_condition": "overlapping",
+    "minority_ratio": 0.36862039005033187
+  },
+  {
+    "dataset_name": "Dataset Sintesis 26",
+    "filename": "data-sintesis-26.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 2,
+      "nominal": 4
+    },
+    "numeric_attributes": [
+      "balance",
+      "pressure"
+    ],
+    "ordinal_attributes": [
+      "size",
+      "priority"
+    ],
+    "ordinal_orders": {
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "priority": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ]
+    },
+    "nominal_attributes": [
+      "department",
+      "status",
+      "language",
+      "region"
+    ],
+    "label_column": "class",
+    "cluster_condition": "interleaved",
+    "minority_ratio": 0.4174719801540776
+  },
+  {
+    "dataset_name": "Dataset Sintesis 27",
+    "filename": "data-sintesis-27.csv",
+    "counts": {
+      "numeric": 5,
+      "ordinal": 2,
+      "nominal": 3
+    },
+    "numeric_attributes": [
+      "income",
+      "age",
+      "temperature",
+      "height",
+      "score"
+    ],
+    "ordinal_attributes": [
+      "frequency",
+      "size"
+    ],
+    "ordinal_orders": {
+      "frequency": [
+        "Never",
+        "Rarely",
+        "Occasionally",
+        "Frequently",
+        "Always"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "nominal_attributes": [
+      "department",
+      "brand",
+      "language"
+    ],
+    "label_column": "class",
+    "cluster_condition": "separated",
+    "minority_ratio": 0.22411854958854432
+  },
+  {
+    "dataset_name": "Dataset Sintesis 28",
+    "filename": "data-sintesis-28.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 2,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "weight",
+      "score"
+    ],
+    "ordinal_attributes": [
+      "priority",
+      "risk_level"
+    ],
+    "ordinal_orders": {
+      "priority": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ],
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ]
+    },
+    "nominal_attributes": [
+      "device_type"
+    ],
+    "label_column": "class",
+    "cluster_condition": "overlapping",
+    "minority_ratio": 0.21842493133480087
+  },
+  {
+    "dataset_name": "Dataset Sintesis 29",
+    "filename": "data-sintesis-29.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 3,
+      "nominal": 5
+    },
+    "numeric_attributes": [
+      "income",
+      "score"
+    ],
+    "ordinal_attributes": [
+      "size",
+      "confidence",
+      "risk_level"
+    ],
+    "ordinal_orders": {
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "confidence": [
+        "Low",
+        "Moderate",
+        "High",
+        "Very High"
+      ],
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ]
+    },
+    "nominal_attributes": [
+      "payment_method",
+      "brand",
+      "color",
+      "language",
+      "status"
+    ],
+    "label_column": "class",
+    "cluster_condition": "interleaved",
+    "minority_ratio": 0.3027604386433296
+  },
+  {
+    "dataset_name": "Dataset Sintesis 30",
+    "filename": "data-sintesis-30.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 1,
+      "nominal": 5
+    },
+    "numeric_attributes": [
+      "age",
+      "temperature"
+    ],
+    "ordinal_attributes": [
+      "risk_level"
+    ],
+    "ordinal_orders": {
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ]
+    },
+    "nominal_attributes": [
+      "gender",
+      "device_type",
+      "status",
+      "color",
+      "language"
+    ],
+    "label_column": "class",
+    "cluster_condition": "separated",
+    "minority_ratio": 0.19387604045295112
+  },
+  {
+    "dataset_name": "Dataset Sintesis 31",
+    "filename": "data-sintesis-31.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 2,
+      "nominal": 4
+    },
+    "numeric_attributes": [
+      "temperature",
+      "balance",
+      "height",
+      "weight"
+    ],
+    "ordinal_attributes": [
+      "risk_level",
+      "confidence"
+    ],
+    "ordinal_orders": {
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "confidence": [
+        "Low",
+        "Moderate",
+        "High",
+        "Very High"
+      ]
+    },
+    "nominal_attributes": [
+      "category",
+      "color",
+      "region",
+      "department"
+    ],
+    "label_column": "class",
+    "cluster_condition": "overlapping",
+    "minority_ratio": 0.31834966207951026
+  },
+  {
+    "dataset_name": "Dataset Sintesis 32",
+    "filename": "data-sintesis-32.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 3,
+      "nominal": 3
+    },
+    "numeric_attributes": [
+      "latency",
+      "height",
+      "pressure",
+      "score"
+    ],
+    "ordinal_attributes": [
+      "satisfaction",
+      "education_level",
+      "condition"
+    ],
+    "ordinal_orders": {
+      "satisfaction": [
+        "Very Dissatisfied",
+        "Dissatisfied",
+        "Neutral",
+        "Satisfied",
+        "Very Satisfied"
+      ],
+      "education_level": [
+        "High School",
+        "Bachelor",
+        "Master",
+        "PhD"
+      ],
+      "condition": [
+        "Poor",
+        "Fair",
+        "Good",
+        "Excellent"
+      ]
+    },
+    "nominal_attributes": [
+      "brand",
+      "color",
+      "category"
+    ],
+    "label_column": "class",
+    "cluster_condition": "interleaved",
+    "minority_ratio": 0.2589718490895257
+  },
+  {
+    "dataset_name": "Dataset Sintesis 33",
+    "filename": "data-sintesis-33.csv",
+    "counts": {
+      "numeric": 3,
+      "ordinal": 2,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "score",
+      "height",
+      "income"
+    ],
+    "ordinal_attributes": [
+      "condition",
+      "skill_level"
+    ],
+    "ordinal_orders": {
+      "condition": [
+        "Poor",
+        "Fair",
+        "Good",
+        "Excellent"
+      ],
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ]
+    },
+    "nominal_attributes": [
+      "status",
+      "language"
+    ],
+    "label_column": "class",
+    "cluster_condition": "separated",
+    "minority_ratio": 0.44149677599693626
+  },
+  {
+    "dataset_name": "Dataset Sintesis 34",
+    "filename": "data-sintesis-34.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 1,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "pressure",
+      "age"
+    ],
+    "ordinal_attributes": [
+      "size"
+    ],
+    "ordinal_orders": {
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "nominal_attributes": [
+      "department",
+      "payment_method"
+    ],
+    "label_column": "class",
+    "cluster_condition": "overlapping",
+    "minority_ratio": 0.35211048740074125
+  },
+  {
+    "dataset_name": "Dataset Sintesis 35",
+    "filename": "data-sintesis-35.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 1,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "income",
+      "duration"
+    ],
+    "ordinal_attributes": [
+      "skill_level"
+    ],
+    "ordinal_orders": {
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ]
+    },
+    "nominal_attributes": [
+      "status",
+      "color"
+    ],
+    "label_column": "class",
+    "cluster_condition": "interleaved",
+    "minority_ratio": 0.24323480956802612
+  },
+  {
+    "dataset_name": "Dataset Sintesis 36",
+    "filename": "data-sintesis-36.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 3,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "duration",
+      "pressure"
+    ],
+    "ordinal_attributes": [
+      "confidence",
+      "satisfaction",
+      "size"
+    ],
+    "ordinal_orders": {
+      "confidence": [
+        "Low",
+        "Moderate",
+        "High",
+        "Very High"
+      ],
+      "satisfaction": [
+        "Very Dissatisfied",
+        "Dissatisfied",
+        "Neutral",
+        "Satisfied",
+        "Very Satisfied"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "nominal_attributes": [
+      "color"
+    ],
+    "label_column": "class",
+    "cluster_condition": "separated",
+    "minority_ratio": 0.29881810463033687
+  },
+  {
+    "dataset_name": "Dataset Sintesis 37",
+    "filename": "data-sintesis-37.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 4,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "score",
+      "weight",
+      "latency",
+      "duration"
+    ],
+    "ordinal_attributes": [
+      "education_level",
+      "priority",
+      "skill_level",
+      "condition"
+    ],
+    "ordinal_orders": {
+      "education_level": [
+        "High School",
+        "Bachelor",
+        "Master",
+        "PhD"
+      ],
+      "priority": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ],
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ],
+      "condition": [
+        "Poor",
+        "Fair",
+        "Good",
+        "Excellent"
+      ]
+    },
+    "nominal_attributes": [
+      "payment_method"
+    ],
+    "label_column": "class",
+    "cluster_condition": "overlapping",
+    "minority_ratio": 0.19736117416043758
+  },
+  {
+    "dataset_name": "Dataset Sintesis 38",
+    "filename": "data-sintesis-38.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 1,
+      "nominal": 3
+    },
+    "numeric_attributes": [
+      "weight",
+      "duration"
+    ],
+    "ordinal_attributes": [
+      "condition"
+    ],
+    "ordinal_orders": {
+      "condition": [
+        "Poor",
+        "Fair",
+        "Good",
+        "Excellent"
+      ]
+    },
+    "nominal_attributes": [
+      "brand",
+      "gender",
+      "language"
+    ],
+    "label_column": "class",
+    "cluster_condition": "interleaved",
+    "minority_ratio": 0.2060837449025634
+  },
+  {
+    "dataset_name": "Dataset Sintesis 39",
+    "filename": "data-sintesis-39.csv",
+    "counts": {
+      "numeric": 3,
+      "ordinal": 2,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "income",
+      "balance",
+      "latency"
+    ],
+    "ordinal_attributes": [
+      "experience",
+      "skill_level"
+    ],
+    "ordinal_orders": {
+      "experience": [
+        "Novice",
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ],
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ]
+    },
+    "nominal_attributes": [
+      "payment_method",
+      "color"
+    ],
+    "label_column": "class",
+    "cluster_condition": "separated",
+    "minority_ratio": 0.20440491974915992
+  },
+  {
+    "dataset_name": "Dataset Sintesis 40",
+    "filename": "data-sintesis-40.csv",
+    "counts": {
+      "numeric": 3,
+      "ordinal": 1,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "duration",
+      "pressure",
+      "height"
+    ],
+    "ordinal_attributes": [
+      "confidence"
+    ],
+    "ordinal_orders": {
+      "confidence": [
+        "Low",
+        "Moderate",
+        "High",
+        "Very High"
+      ]
+    },
+    "nominal_attributes": [
+      "brand"
+    ],
+    "label_column": "class",
+    "cluster_condition": "overlapping",
+    "minority_ratio": 0.2967322523896754
+  },
+  {
+    "dataset_name": "Dataset Sintesis 01",
+    "filename": "data-sintesis-01.csv",
+    "counts": {
+      "numeric": 3,
+      "ordinal": 3,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "age",
+      "duration",
+      "temperature"
+    ],
+    "ordinal_attributes": [
+      "satisfaction",
+      "confidence",
+      "condition"
+    ],
+    "ordinal_orders": {
+      "satisfaction": [
+        "Very Dissatisfied",
+        "Dissatisfied",
+        "Neutral",
+        "Satisfied",
+        "Very Satisfied"
+      ],
+      "confidence": [
+        "Low",
+        "Moderate",
+        "High",
+        "Very High"
+      ],
+      "condition": [
+        "Poor",
+        "Fair",
+        "Good",
+        "Excellent"
+      ]
+    },
+    "nominal_attributes": [
+      "brand",
+      "color"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 02",
+    "filename": "data-sintesis-02.csv",
+    "counts": {
+      "numeric": 1,
+      "ordinal": 4,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "age"
+    ],
+    "ordinal_attributes": [
+      "risk_level",
+      "condition",
+      "education_level",
+      "size"
+    ],
+    "ordinal_orders": {
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "condition": [
+        "Poor",
+        "Fair",
+        "Good",
+        "Excellent"
+      ],
+      "education_level": [
+        "High School",
+        "Bachelor",
+        "Master",
+        "PhD"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "nominal_attributes": [
+      "gender",
+      "department"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 03",
+    "filename": "data-sintesis-03.csv",
+    "counts": {
+      "numeric": 7,
+      "ordinal": 2,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "pressure",
+      "height",
+      "temperature",
+      "balance",
+      "duration",
+      "score",
+      "age"
+    ],
+    "ordinal_attributes": [
+      "frequency",
+      "priority"
+    ],
+    "ordinal_orders": {
+      "frequency": [
+        "Never",
+        "Rarely",
+        "Occasionally",
+        "Frequently",
+        "Always"
+      ],
+      "priority": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ]
+    },
+    "nominal_attributes": [
+      "color"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 04",
+    "filename": "data-sintesis-04.csv",
+    "counts": {
+      "numeric": 1,
+      "ordinal": 2,
+      "nominal": 7
+    },
+    "numeric_attributes": [
+      "score"
+    ],
+    "ordinal_attributes": [
+      "priority",
+      "size"
+    ],
+    "ordinal_orders": {
+      "priority": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "nominal_attributes": [
+      "brand",
+      "device_type",
+      "department",
+      "gender",
+      "language",
+      "status",
+      "color"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 05",
+    "filename": "data-sintesis-05.csv",
+    "counts": {
+      "numeric": 3,
+      "ordinal": 3,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "balance",
+      "pressure",
+      "income"
+    ],
+    "ordinal_attributes": [
+      "confidence",
+      "size",
+      "priority"
+    ],
+    "ordinal_orders": {
+      "confidence": [
+        "Low",
+        "Moderate",
+        "High",
+        "Very High"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "priority": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ]
+    },
+    "nominal_attributes": [
+      "status",
+      "department"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 06",
+    "filename": "data-sintesis-06.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 2,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "income",
+      "age",
+      "temperature",
+      "height"
+    ],
+    "ordinal_attributes": [
+      "risk_level",
+      "satisfaction"
+    ],
+    "ordinal_orders": {
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "satisfaction": [
+        "Very Dissatisfied",
+        "Dissatisfied",
+        "Neutral",
+        "Satisfied",
+        "Very Satisfied"
+      ]
+    },
+    "nominal_attributes": [
+      "region",
+      "department"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 07",
+    "filename": "data-sintesis-07.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 1,
+      "nominal": 3
+    },
+    "numeric_attributes": [
+      "duration",
+      "balance"
+    ],
+    "ordinal_attributes": [
+      "priority"
+    ],
+    "ordinal_orders": {
+      "priority": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ]
+    },
+    "nominal_attributes": [
+      "device_type",
+      "color",
+      "language"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 08",
+    "filename": "data-sintesis-08.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 4,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "duration",
+      "income",
+      "score",
+      "latency"
+    ],
+    "ordinal_attributes": [
+      "skill_level",
+      "frequency",
+      "size",
+      "priority"
+    ],
+    "ordinal_orders": {
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ],
+      "frequency": [
+        "Never",
+        "Rarely",
+        "Occasionally",
+        "Frequently",
+        "Always"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "priority": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ]
+    },
+    "nominal_attributes": [
+      "brand",
+      "color"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 09",
+    "filename": "data-sintesis-09.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 2,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "weight",
+      "age",
+      "temperature",
+      "height"
+    ],
+    "ordinal_attributes": [
+      "frequency",
+      "size"
+    ],
+    "ordinal_orders": {
+      "frequency": [
+        "Never",
+        "Rarely",
+        "Occasionally",
+        "Frequently",
+        "Always"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "nominal_attributes": [
+      "gender",
+      "device_type"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 10",
+    "filename": "data-sintesis-10.csv",
+    "counts": {
+      "numeric": 1,
+      "ordinal": 3,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "temperature"
+    ],
+    "ordinal_attributes": [
+      "risk_level",
+      "skill_level",
+      "frequency"
+    ],
+    "ordinal_orders": {
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ],
+      "frequency": [
+        "Never",
+        "Rarely",
+        "Occasionally",
+        "Frequently",
+        "Always"
+      ]
+    },
+    "nominal_attributes": [
+      "language",
+      "device_type"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 11",
+    "filename": "data-sintesis-11.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 2,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "score",
+      "duration"
+    ],
+    "ordinal_attributes": [
+      "risk_level",
+      "confidence"
+    ],
+    "ordinal_orders": {
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "confidence": [
+        "Low",
+        "Moderate",
+        "High",
+        "Very High"
+      ]
+    },
+    "nominal_attributes": [
+      "color"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 12",
+    "filename": "data-sintesis-12.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 2,
+      "nominal": 5
+    },
+    "numeric_attributes": [
+      "latency",
+      "height"
+    ],
+    "ordinal_attributes": [
+      "confidence",
+      "skill_level"
+    ],
+    "ordinal_orders": {
+      "confidence": [
+        "Low",
+        "Moderate",
+        "High",
+        "Very High"
+      ],
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ]
+    },
+    "nominal_attributes": [
+      "language",
+      "status",
+      "device_type",
+      "department",
+      "payment_method"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 13",
+    "filename": "data-sintesis-13.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 3,
+      "nominal": 3
+    },
+    "numeric_attributes": [
+      "age",
+      "income",
+      "score",
+      "weight"
+    ],
+    "ordinal_attributes": [
+      "frequency",
+      "condition",
+      "skill_level"
+    ],
+    "ordinal_orders": {
+      "frequency": [
+        "Never",
+        "Rarely",
+        "Occasionally",
+        "Frequently",
+        "Always"
+      ],
+      "condition": [
+        "Poor",
+        "Fair",
+        "Good",
+        "Excellent"
+      ],
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ]
+    },
+    "nominal_attributes": [
+      "color",
+      "status",
+      "department"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 14",
+    "filename": "data-sintesis-14.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 4,
+      "nominal": 3
+    },
+    "numeric_attributes": [
+      "pressure",
+      "age"
+    ],
+    "ordinal_attributes": [
+      "priority",
+      "satisfaction",
+      "size",
+      "risk_level"
+    ],
+    "ordinal_orders": {
+      "priority": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ],
+      "satisfaction": [
+        "Very Dissatisfied",
+        "Dissatisfied",
+        "Neutral",
+        "Satisfied",
+        "Very Satisfied"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "risk_level": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ]
+    },
+    "nominal_attributes": [
+      "department",
+      "payment_method",
+      "region"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 15",
+    "filename": "data-sintesis-15.csv",
+    "counts": {
+      "numeric": 3,
+      "ordinal": 2,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "balance",
+      "age",
+      "duration"
+    ],
+    "ordinal_attributes": [
+      "experience",
+      "confidence"
+    ],
+    "ordinal_orders": {
+      "experience": [
+        "Novice",
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ],
+      "confidence": [
+        "Low",
+        "Moderate",
+        "High",
+        "Very High"
+      ]
+    },
+    "nominal_attributes": [
+      "payment_method"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 16",
+    "filename": "data-sintesis-16.csv",
+    "counts": {
+      "numeric": 3,
+      "ordinal": 1,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "duration",
+      "pressure",
+      "temperature"
+    ],
+    "ordinal_attributes": [
+      "experience"
+    ],
+    "ordinal_orders": {
+      "experience": [
+        "Novice",
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ]
+    },
+    "nominal_attributes": [
+      "color",
+      "device_type"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 17",
+    "filename": "data-sintesis-17.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 3,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "latency",
+      "weight"
+    ],
+    "ordinal_attributes": [
+      "education_level",
+      "satisfaction",
+      "priority"
+    ],
+    "ordinal_orders": {
+      "education_level": [
+        "High School",
+        "Bachelor",
+        "Master",
+        "PhD"
+      ],
+      "satisfaction": [
+        "Very Dissatisfied",
+        "Dissatisfied",
+        "Neutral",
+        "Satisfied",
+        "Very Satisfied"
+      ],
+      "priority": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ]
+    },
+    "nominal_attributes": [
+      "category"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 18",
+    "filename": "data-sintesis-18.csv",
+    "counts": {
+      "numeric": 1,
+      "ordinal": 1,
+      "nominal": 4
+    },
+    "numeric_attributes": [
+      "temperature"
+    ],
+    "ordinal_attributes": [
+      "skill_level"
+    ],
+    "ordinal_orders": {
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ]
+    },
+    "nominal_attributes": [
+      "gender",
+      "brand",
+      "department",
+      "language"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 19",
+    "filename": "data-sintesis-19.csv",
+    "counts": {
+      "numeric": 1,
+      "ordinal": 2,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "pressure"
+    ],
+    "ordinal_attributes": [
+      "skill_level",
+      "confidence"
+    ],
+    "ordinal_orders": {
+      "skill_level": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ],
+      "confidence": [
+        "Low",
+        "Moderate",
+        "High",
+        "Very High"
+      ]
+    },
+    "nominal_attributes": [
+      "color",
+      "language"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Dataset Sintesis 20",
+    "filename": "data-sintesis-20.csv",
+    "counts": {
+      "numeric": 3,
+      "ordinal": 1,
+      "nominal": 4
+    },
+    "numeric_attributes": [
+      "duration",
+      "pressure",
+      "height"
+    ],
+    "ordinal_attributes": [
+      "size"
+    ],
+    "ordinal_orders": {
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "nominal_attributes": [
+      "brand",
+      "payment_method",
+      "language",
+      "device_type"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Automobile",
+    "filename": "new_01_automobile.csv",
+    "counts": {
+      "numeric": 15,
+      "ordinal": 2,
+      "nominal": 8
+    },
+    "numeric_attributes": [
+      "symboling",
+      "normalized-losses",
+      "wheel-base",
+      "length",
+      "width",
+      "height",
+      "curb-weight",
+      "engine-size",
+      "bore",
+      "stroke",
+      "compression-ratio",
+      "horsepower",
+      "peak-rpm",
+      "city-mpg",
+      "highway-mpg"
+    ],
+    "ordinal_attributes": [
+      "num-of-doors",
+      "num-of-cylinders"
+    ],
+    "ordinal_orders": {
+      "num-of-doors": ["two", "three", "four", "five-more"],
+      "num-of-cylinders": ["two", "three", "four", "five", "six", "eight", "twelve"]
+    },
+    "nominal_attributes": [
+      "make",
+      "fuel-type",
+      "aspiration",
+      "body-style",
+      "drive-wheels",
+      "engine-location",
+      "engine-type",
+      "fuel-system"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "German Credit",
+    "filename": "new_02_german_credit.csv",
+    "counts": {
+      "numeric": 7,
+      "ordinal": 5,
+      "nominal": 8
+    },
+    "numeric_attributes": [
+      "duration",
+      "credit_amount",
+      "disposable_income",
+      "present_residence_since",
+      "ages",
+      "number_existing_credits",
+      "people_liable"
+    ],
+    "ordinal_attributes": [
+      "checking_status",
+      "credit_history",
+      "savings",
+      "employment",
+      "job"
+    ],
+    "ordinal_orders": {
+      "checking_status": ["A11", "A12", "A13", "A14"],
+      "credit_history": ["A30", "A31", "A32", "A33", "A34"],
+      "savings": ["A61", "A62", "A63", "A64", "A65"],
+      "employment": ["A71", "A72", "A73", "A74", "A75"],
+      "job": ["A171", "A172", "A173", "A174"]
+    },
+    "nominal_attributes": [
+      "purpose",
+      "personal_status",
+      "other_debtors",
+      "property",
+      "other_installment",
+      "housing",
+      "telephone",
+      "foreign_worker"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Heart Disease (Cleveland)",
+    "filename": "new_03_heart_disease.csv",
+    "counts": {
+      "numeric": 6,
+      "ordinal": 4,
+      "nominal": 3
+    },
+    "numeric_attributes": [
+      "age",
+      "trestbps",
+      "chol",
+      "thalch",
+      "oldpeak",
+      "ca"
+    ],
+    "ordinal_attributes": [
+      "cp",
+      "restecg",
+      "slope",
+      "thal"
+    ],
+    "ordinal_orders": {
+      "cp": ["typical angina", "atypical angina", "non-anginal", "asymptomatic"],
+      "restecg": ["normal", "lv hypertrophy", "st-t abnormality"],
+      "slope": ["upsloping", "flat", "downsloping"],
+      "thal": ["normal", "fixed defect", "reversable defect"]
+    },
+    "nominal_attributes": [
+      "sex",
+      "fbs",
+      "exang"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Australian Credit Approval",
+    "filename": "new_04_australian_credit.csv",
+    "counts": {
+      "numeric": 6,
+      "ordinal": 0,
+      "nominal": 9
+    },
+    "numeric_attributes": [
+      "A2",
+      "A3",
+      "A8",
+      "A11",
+      "A14",
+      "A15"
+    ],
+    "ordinal_attributes": [],
+    "ordinal_orders": {},
+    "nominal_attributes": [
+      "A1",
+      "A4",
+      "A5",
+	  "A6",
+      "A7",
+	  "A9",
+      "A10",
+      "A12",
+      "A13"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Student Performance (Math)",
+    "filename": "new_05_student_performace_mat.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 11,
+      "nominal": 17
+    },
+    "numeric_attributes": [
+      "age",
+      "absences",
+      "G1",
+      "G2"
+    ],
+    "ordinal_attributes": [
+      "Medu",
+      "Fedu",
+      "traveltime",
+      "studytime",
+      "failures",
+      "famrel",
+      "freetime",
+      "goout",
+      "Dalc",
+      "Walc",
+      "health"
+    ],
+    "ordinal_orders": {
+      "Medu": [0, 1, 2, 3, 4],
+      "Fedu": [0, 1, 2, 3, 4],
+      "traveltime": [1, 2, 3, 4],
+      "studytime": [1, 2, 3, 4],
+      "failures": [0, 1, 2, 3, 4],
+      "famrel": [1, 2, 3, 4, 5],
+      "freetime": [1, 2, 3, 4, 5],
+      "goout": [1, 2, 3, 4, 5],
+      "Dalc": [1, 2, 3, 4, 5],
+      "Walc": [1, 2, 3, 4, 5],
+      "health": [1, 2, 3, 4, 5]
+    },
+    "nominal_attributes": [
+      "school",
+      "sex",
+      "address",
+      "famsize",
+      "Pstatus",
+      "Mjob",
+      "Fjob",
+      "reason",
+      "guardian",
+      "schoolsup",
+      "famsup",
+      "paid",
+      "activities",
+      "nursery",
+      "higher",
+      "internet",
+      "romantic"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Telco Customer Churn",
+    "filename": "new_06_telco_customer_churn.csv",
+    "counts": {
+      "numeric": 3,
+      "ordinal": 1,
+      "nominal": 15
+    },
+    "numeric_attributes": [
+      "tenure",
+      "MonthlyCharges",
+      "TotalCharges"
+    ],
+    "ordinal_attributes": ["Contract"],
+    "ordinal_orders": {
+      "Contract": ["Month-to-month", "One year", "Two year"]
+    },
+    "nominal_attributes": [
+      "gender",
+      "SeniorCitizen",
+      "Partner",
+      "Dependents",
+      "PhoneService",
+      "MultipleLines",
+      "InternetService",
+      "OnlineSecurity",
+      "OnlineBackup",
+      "DeviceProtection",
+      "TechSupport",
+      "StreamingTV",
+      "StreamingMovies",
+      "PaperlessBilling",
+      "PaymentMethod"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Cylinder Bands",
+    "filename": "new_07_cylinder-band.csv",
+    "counts": {
+      "numeric": 19,
+      "ordinal": 2,
+      "nominal": 22
+    },
+    "numeric_attributes": [
+      "proof_cut",
+      "viscosity",
+      "caliper",
+      "ink_temperature",
+      "humidity",
+      "roughness",
+      "blade_pressure",
+      "varnish_pct",
+      "press_speed",
+      "ink_pct",
+      "solvent_pct",
+      "esa_voltage",
+      "esa_amperage",
+      "wax",
+      "hardener",
+      "roller_durometer",
+      "current_density",
+      "anode_space_ratio",
+      "chrome_content"
+    ],
+    "ordinal_attributes": [
+      "paper_type",
+      "ink_type"
+    ],
+    "ordinal_orders": {
+      "paper_type": ["UNCOATED", "COATED", "SUPER"],
+      "ink_type": ["UNCOATED", "COATED", "COVER"]
+    },
+    "nominal_attributes": [
+      "cylinder_number",
+      "customer",
+      "job_number",
+      "grain_screened",
+      "ink_color",
+      "proof_on_ctd_ink",
+      "blade_mfg",
+      "cylinder_division",
+      "direct_steam",
+      "solvent_type",
+      "type_on_cylinder",
+      "press_type",
+      "press",
+      "unit_number",
+      "cylinder_size",
+      "paper_mill_location",
+      "plating_tank"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Exasens",
+    "filename": "new_08_exasens.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 0,
+      "nominal": 2
+    },
+    "numeric_attributes": [
+      "imaginary_part_min",
+      "imaginary_part_avg",
+      "real_part_min",
+      "real_part_avg",
+	  "age"
+    ],
+    "ordinal_attributes": [],
+    "ordinal_orders": {},
+    "nominal_attributes": [
+      "gender",
+      "smoking"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Abalone",
+    "filename": "new_09_abalone.csv",
+    "counts": {
+      "numeric": 7,
+      "ordinal": 0,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "length",
+      "diameter",
+      "height",
+      "whole_height",
+      "shucked_weight",
+      "viscera_weight",
+      "shell_weight"
+    ],
+    "ordinal_attributes": [],
+    "ordinal_orders": {},
+    "nominal_attributes": [
+      "sex"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "NPHA Doctor Visits",
+    "filename": "new_10_npha-doctor-visits.csv",
+    "counts": {
+      "numeric": 4,
+      "ordinal": 3,
+      "nominal": 7
+    },
+    "numeric_attributes": [
+      "age",
+      "trouble sleeping",
+      "prescription sleep medication",
+      "race"
+    ],
+    "ordinal_attributes": [
+      "phyiscal health",
+      "mental health",
+      "dental health"
+    ],
+    "ordinal_orders": {
+      "phyiscal health": [-1, 1, 2, 3, 4, 5],
+      "mental health": [-1, 1, 2, 3, 4, 5],
+      "dental health": [-1, 1, 2, 3, 4, 5,6]
+    },
+    "nominal_attributes": [
+      "employment",
+      "stress",
+      "medication",
+      "pain",
+      "bathroom needs",
+      "uknown",
+      "gender"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Cirrhosis Patient Survival",
+    "filename": "new_11_cirrhosis.csv",
+    "counts": {
+      "numeric": 11,
+      "ordinal": 1,
+      "nominal": 6
+    },
+    "numeric_attributes": [
+      "n_days",
+      "age",
+      "bilirubin",
+      "cholesterol",
+      "albumin",
+      "copper",
+      "alk_phos",
+      "sgot",
+      "tryglicerides",
+      "platelets",
+      "prothrombin"
+    ],
+    "ordinal_attributes": [
+      "stage"
+    ],
+    "ordinal_orders": {
+      "stage": ["1", "2", "3", "4"]
+    },
+    "nominal_attributes": [
+      "drug",
+      "sex",
+      "ascites",
+      "hepatomegaly",
+      "spiders",
+      "edema"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Caesarian Section",
+    "filename": "new_12_caesar.csv",
+    "counts": {
+      "numeric": 2,
+      "ordinal": 2,
+      "nominal": 1
+    },
+    "numeric_attributes": [
+      "age",
+	  "delivery_number",
+      "delivery_time"
+    ],
+    "ordinal_attributes": [
+      "blood_pressure"
+    ],
+    "ordinal_orders": {
+      "blood_pressure": [0, 1, 2]
+    },
+    "nominal_attributes": [
+      "heart_problem"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Obesity Levels",
+    "filename": "new_13_obesity.csv",
+    "counts": {
+      "numeric": 7,
+      "ordinal": 3,
+      "nominal": 6
+    },
+    "numeric_attributes": [
+      "age",
+      "height",
+      "weight",
+      "ncp",
+      "ch2o",
+      "faf",
+      "tue",
+	  "fcvc"
+    ],
+    "ordinal_attributes": [
+      "caec",
+      "calc"
+    ],
+    "ordinal_orders": {
+      "caec": ["no", "Sometimes", "Frequently", "Always"],
+      "calc": ["no", "Sometimes", "Frequently", "Always"]
+    },
+    "nominal_attributes": [
+      "gender",
+      "family_history",
+      "favc",
+      "smoke",
+      "scc",
+      "mtrans"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Heart Failure Clinical Records",
+    "filename": "new_14_heart_failure.csv",
+    "counts": {
+      "numeric": 6,
+      "ordinal": 0,
+      "nominal": 5
+    },
+    "numeric_attributes": [
+      "age",
+      "creatinine_phosphokinase",
+      "ejection_fraction",
+      "platelets",
+      "serum_creatinine",
+	  "serum_sodium",
+      "time"
+    ],
+    "ordinal_attributes": [],
+    "ordinal_orders": {},
+    "nominal_attributes": [
+      "anaemia",
+      "diabetes",
+      "high_blood_pressure",
+      "sex",
+      "smoking"
+    ],
+    "label_column": "class"
+  },
+  {
+    "dataset_name": "Stroke Dataset",
+    "filename": "new_15_stroke-data.csv",
+    "counts": {
+      "numeric": 3,
+      "ordinal": 1,
+      "nominal": 6
+    },
+    "numeric_attributes": [
+      "age",
+      "avg_glucose_level",
+      "bmi"
+    ],
+    "ordinal_attributes": ["smoking_status"],
+    "ordinal_orders": {
+      "smoking_status": ["never smoked", "formerly smoked", "smokes", "Unknown"]
+    },
+    "nominal_attributes": [
+      "gender",
+      "hypertension",
+      "heart_disease",
+      "ever_married",
+      "work_type",
+      "Residence_type"
+    ],
+    "label_column": "class"
+  }
+]

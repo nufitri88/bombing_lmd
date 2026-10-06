@@ -1,0 +1,15 @@
+flowchart TD
+  S([Mulai]) --> L[Baca hasil Bombing-LMD revisi dari bombing_lmd_hybrid_15_datasets_REVISI.csv]
+  L --> D[Daftar 12 dataset Tabel 6-8]
+  D --> N{Dataset berikutnya?}
+  N -- tidak --> AG[Rata-ratakan 5 seed per lengan dan dataset]
+  N -- ya --> P[Muat data, imputasi bila ada nilai hilang, hitung jarak Gower]
+  P --> A1[A1: k=2 tetap]
+  P --> A2[A2: k = jumlah kelas sebenarnya]
+  P --> A3[A3: untuk k=2..10 jalankan K-Prototypes, pilih k dengan Silhouette Gower tertinggi]
+  A1 --> M[Hitung CU, ER, ARI, NMI, Purity]
+  A2 --> M
+  A3 --> M
+  M --> SV[Simpan ke fig6k_raw.csv per seed] --> N
+  AG --> ST[Bandingkan dengan Bombing-LMD: win-count 4 desimal, Wilcoxon eksak, Holm atas 3 lengan]
+  ST --> F([Figure 6 dan paragraf Section 4.5])

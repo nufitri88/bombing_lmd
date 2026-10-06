@@ -1,0 +1,26 @@
+flowchart TD
+    A([Mulai]) --> B["Kunci lingkungan sebelum impor numpy<br/>PYTHONHASHSEED=0, 1 thread BLAS/OMP; np.random.seed per dataset"]
+    B --> C["Baca konfigurasi: 20 dataset sintetis, skema JSON, lengan K-Prototype, SEED_LIST, folder keluaran"]
+    C --> D{"Masih ada dataset d?"}
+    D -->|Ya| E["Muat d; pra-proses sekali (label, tipe atribut, urutan ordinal, imputasi)"]
+    E --> F["Bombing-LMD revisi (k estimasi): fit sekali dengan seed tetap; catat K"]
+    F --> G["Matriks jarak LMD dari model Bombing-LMD pada d"]
+    G --> H{"Masih ada lengan K-Prototype a?<br/>A1: k = 2 tetap<br/>A2: k = jumlah kelas sebenarnya<br/>A3: k dipilih Silhouette (2..Kmax)"}
+    H -->|Ya| I{"Masih ada seed s?"}
+    I -->|Ya| J["Jalankan K-Prototype (k menurut lengan a, seed s)"]
+    J --> K{"Berhasil?"}
+    K -->|Tidak| L["Catat status gagal + pesan galat"]
+    K -->|Ya| M["Hitung SIL dan Dunn pada matriks jarak yang SAMA (LMD), ditambah CU, ER, ARI, NMI, Purity"]
+    L --> N
+    M --> N["Tulis baris ke CSV mentah (dataset, metode, lengan, seed, K, metrik)"]
+    N --> I
+    I -->|Tidak| O["Rerata seed per (dataset, lengan)"]
+    O --> H
+    H -->|Tidak| P["Hitung metrik Bombing-LMD pada d dengan fungsi yang sama"]
+    P --> Q["Simpan checkpoint dataset d"]
+    Q --> D
+    D -->|Tidak| R["Win-count per metrik: seri dibulatkan 4 desimal dan dibagi rata (1/m), per lengan"]
+    R --> S["Friedman/Wilcoxon eksak (Holm) Bombing-LMD vs tiap lengan, N = 20; efek ukuran"]
+    S --> T["Tulis CSV ringkasan + Figure 6 (rerata dan win-count), label berbahasa Inggris, 300 dpi"]
+    T --> U["Uji konsistensi: hash CSV dua run; bandingkan dengan angka naskah lama (12/8, 19/1, 20/0, 19/1, 19/1, 8/12)"]
+    U --> V([Selesai])

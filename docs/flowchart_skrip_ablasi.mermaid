@@ -1,0 +1,26 @@
+flowchart TD
+    A([Mulai]) --> B["Kunci lingkungan: PYTHONHASHSEED=0, 1 thread BLAS/OMP, np.random.seed(42)"]
+    B --> C["Baca config: studi = I atau II, daftar dataset, daftar varian, SEED_LIST, folder keluaran"]
+    C --> D{"Studi?"}
+    D -->|"I: leave-one-out (5 varian)"| E1["Varian: Full, wo-EW, wo-DE, wo-PM, wo-RF; unit = 10 dataset sintetis"]
+    D -->|"II: faktorial 2x2 (4 varian)"| E2["Varian: baseline (tanpa DE, tanpa PM), +PM (wo-DE), +DE (wo-PM), Full; unit = 16 dataset campuran"]
+    E1 --> F
+    E2 --> F
+    F["Untuk setiap dataset d: muat data, atribut, urutan ordinal; cek checkpoint"] --> G["Untuk setiap varian v: bangun model dari bendera (EW, DE, PM, RF)"]
+    G --> H["fit(d) dengan seed tetap; catat K, waktu, status ok/gagal"]
+    H --> I{"Berhasil?"}
+    I -->|Tidak| J["Catat status gagal + pesan galat; lanjut"]
+    I -->|Ya| K["Hitung SIL, Dunn, CU, ER, ARI, NMI, Purity (matriks jarak sama untuk semua varian pada dataset d)"]
+    J --> L
+    K --> L["Tulis satu baris ke CSV mentah (dataset, varian, seed, metrik, K); simpan checkpoint"]
+    L --> M{"Masih ada varian atau dataset?"}
+    M -->|Ya| F
+    M -->|Tidak| N["Bentuk matriks unit x varian per metrik; periksa kelengkapan (tanpa NaN)"]
+    N --> O["Friedman per metrik: chi2, p, Kendall W; N tersirat = chi2 / (W (k-1)) harus sama dengan jumlah unit"]
+    O --> P{"p omnibus < 0,05?"}
+    P -->|Tidak| Q["Tandai: tidak dilanjutkan ke post hoc"]
+    P -->|Ya| R["Wilcoxon eksak berpasangan untuk daftar perbandingan studi; koreksi Holm per metrik; median selisih + Hodges-Lehmann + CI"]
+    Q --> S
+    R --> S["Tulis Tabel 2-5 (CSV + teks), peta tanda: arah efek PM, DE, RF, EW"]
+    S --> T["Uji konsistensi: bandingkan dengan angka naskah 13 Sep (toleransi), cetak selisih"]
+    T --> U([Selesai])

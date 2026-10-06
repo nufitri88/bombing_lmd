@@ -1,0 +1,44 @@
+flowchart TD
+    A([Mulai]) --> B["Tahap 0: kunci lingkungan sebelum impor numpy<br/>PYTHONHASHSEED=0, 1 thread BLAS/OMP; jalankan ulang proses bila belum diatur"]
+    B --> C["Baca konfigurasi: studi I atau II, daftar unit, SEED_BASE, daftar seed, folder keluaran"]
+    C --> D{"Studi?"}
+    D -->|"I: leave-one-out"| E1["Varian: Full, wo-EW, wo-DE, wo-PM, wo-RF<br/>Perbandingan: 4 (wo-X vs Full)<br/>Unit: 10 dataset sintetis"]
+    D -->|"II: faktorial 2x2 DE x PM"| E2["Varian: baseline, +PM, +DE, Full<br/>Perbandingan: 5<br/>Unit: 16 dataset campuran"]
+    E1 --> F
+    E2 --> F
+
+    subgraph T1 ["Tahap 1: eksekusi (tiga lingkar bersarang)"]
+        F{"Masih ada dataset d?"}
+        F -->|Ya| G["Muat X, y; pra-proses sekali; bangun matriks jarak bersama untuk semua varian"]
+        G --> H{"Masih ada varian v pada d?"}
+        H -->|Ya| I{"(d, v) sudah di checkpoint?"}
+        I -->|Ya| H
+        I -->|Tidak| J{"Masih ada seed s?"}
+        J -->|Ya| K["Bangun model dari bendera (use_ew, use_de, use_pm, use_rf)<br/>seed = SEED_BASE + indeks(d) + s; fit(X)"]
+        K --> L{"fit berhasil?"}
+        L -->|Tidak| M["Catat status gagal + pesan galat"]
+        L -->|Ya| N["Hitung SIL, Dunn, CU, ER, ARI, NMI, Purity, K, waktu"]
+        M --> O["Tulis baris ke CSV mentah"]
+        N --> O
+        O --> J
+        J -->|Tidak| P["Simpan checkpoint (d, v)"]
+        P --> H
+        H -->|Tidak| F
+    end
+
+    F -->|Tidak| Q["Tahap 2: rerata seed per (unit, varian); bentuk matriks unit x varian per metrik"]
+    Q --> R{"Ada NaN?"}
+    R -->|Ya| S["Laporkan unit hilang; hentikan uji untuk metrik tersebut"]
+    R -->|Tidak| T["Tahap 3: Friedman per metrik (chi2, p, Kendall W)"]
+    T --> U{"N tersirat = chi2 / (W (k-1)) sama dengan jumlah unit?"}
+    U -->|Tidak| V["Periksa data: tandai galat konsistensi"]
+    U -->|Ya| W{"p omnibus < 0,05?"}
+    W -->|Tidak| X["Tandai: tidak dilanjutkan ke post hoc"]
+    W -->|Ya| Y["Wilcoxon eksak untuk seluruh perbandingan studi<br/>Holm atas seluruh perbandingan dalam metrik<br/>median selisih, Hodges-Lehmann + CI 95%, menang/kalah/seri"]
+    S --> Z
+    V --> Z
+    X --> Z
+    Y --> Z["Tahap 4: tulis Tabel 2/4 dan 3/5; ringkasan arah efek EW, DE, PM, RF"]
+    Z --> AA["Bandingkan dengan angka naskah 13 Sep; cetak selisih mutlak; tandai selisih di atas toleransi"]
+    AA --> AB["Verifikasi reproduksi: jalankan ulang dengan seed sama; bandingkan hash CSV mentah"]
+    AB --> AC([Selesai])

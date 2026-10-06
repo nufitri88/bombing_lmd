@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+# datasets are not redistributed; see DATASETS.md
+53_mix_datasets/
+# working files
+*_backup*
+*.xls
+*.log
+run_log.txt
+fig6k_raw_backup*
+*_tmp.json
